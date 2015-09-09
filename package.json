@@ -51,5 +51,8 @@
   },
   "peerDependencies": {
     "react": "^0.13"
+  },
+  "dependencies": {
+    "react-component-resizable": "^0.2.3"
   }
 }

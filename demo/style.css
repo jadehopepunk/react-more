@@ -1,0 +1,29 @@
+.resizableEllipsis {
+  border: 1px solid red;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.resizableEllipsis p:first-child {
+  margin-top: 0;
+}
+
+.resizableEllipsis p:last-child {
+  margin-bottom: 0;
+}
+
+.resizableEllipsis .resizableEllipsisContents {
+  border: 1px solid blue;
+  line-height: 20px;
+}
+
+.resizableEllipsis .expandResizableEllipsis {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding-left: 3em;
+  line-height: 20px;
+  height: 20px;
+}

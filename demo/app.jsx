@@ -6,7 +6,7 @@ var Fork = require('react-ghfork');
 var readme = require('../README.md');
 var pkgInfo = require('../package.json');
 
-//var Ellipsify = require('../lib');
+var Ellipsis = require('../lib');
 
 module.exports = React.createClass({
   displayName: 'App',
@@ -50,8 +50,14 @@ module.exports = React.createClass({
                     </div>
                   </div>
                 </fieldset>
-
               </form>
+            </div>
+
+            <div className="the-example">
+              <Ellipsis>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat leo eros, ac efficitur nisl gravida ut. Nam gravida sed ante quis fermentum. Praesent ipsum velit, commodo vitae pulvinar dapibus, ornare vel libero. Praesent eu mi non orci varius placerat. Quisque eu nisi fermentum, aliquam augue convallis, aliquet risus. Aliquam et eros posuere, consequat sapien at, congue ante. Cras commodo massa et ante iaculis, eget venenatis erat consectetur. Nullam nec porta erat.</p>
+                <p>Morbi a consectetur neque. Phasellus dignissim vestibulum purus id luctus. Donec tempus mattis justo, id pulvinar leo. Proin dolor odio, cursus vel ipsum eget, facilisis ornare dui. Quisque sagittis magna tortor, eu tincidunt mi semper sed. Cras non elit ut tellus maximus molestie. Aenean mattis molestie nibh sed rhoncus.</p>
+              </Ellipsis>
             </div>
           </section>
           <section className='documentation'>
