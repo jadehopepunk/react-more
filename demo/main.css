@@ -89,3 +89,8 @@ article .description h2 {
 .the-example {
   margin: 1em 3em;
 }
+
+a {
+  color: blue;
+  text-decoration: underline;
+}

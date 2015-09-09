@@ -11,3 +11,7 @@
   display: block;
   text-align: right;
 }
+
+.resizableEllipsis .contractResizableEllipsis {
+  text-align: right;
+}
