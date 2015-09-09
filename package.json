@@ -1,0 +1,55 @@
+{
+  "name": "react-resizable-ellipsis",
+  "version": "0.1.0",
+  "description": "Truncate an area of text with an ellipsis and read more link, and recompute this if the area gets resized.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craigambrose/react-resizable-ellipsis.git"
+  },
+  "keywords": [
+    "react-component",
+    "ellipsis"
+  ],
+  "author": "Craig Ambrose <craig@craigambrose.com>",
+  "user": "craigambrose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craigambrose/react-resizable-ellipsis/issues"
+  },
+  "homepage": "https://github.com/craigambrose/react-resizable-ellipsis",
+  "devDependencies": {
+    "babel-eslint": "^2.0.2",
+    "css-loader": "^0.9.1",
+    "ent": "^2.2.0",
+    "eslint": "^0.17.1",
+    "eslint-plugin-react": "^1.6.1",
+    "file-loader": "^0.8.1",
+    "gh-pages": "^0.2.0",
+    "highlight-loader": "^0.3.0",
+    "highlight.js": "^8.4.0",
+    "html-loader": "^0.2.3",
+    "html-webpack-plugin": "^1.1.0",
+    "jest-cli": "^0.4.0",
+    "json-loader": "^0.5.1",
+    "jsx-loader": "^0.12.2",
+    "markdown-loader": "^0.1.2",
+    "purecss": "^0.6.0",
+    "react": "^0.13",
+    "react-ghfork": "^0.3.2",
+    "react-hot-loader": "^1.2.3",
+    "react-tools": "^0.13.1",
+    "style-loader": "^0.9.0",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.7.0",
+    "xtend": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^0.13"
+  }
+}
