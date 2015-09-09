@@ -85,3 +85,7 @@ article .description {
 article .description h2 {
   margin: 0;
 }
+
+.the-example {
+  margin: 1em 3em;
+}

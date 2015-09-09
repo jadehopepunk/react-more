@@ -15,16 +15,16 @@ module.exports = React.createClass({
 
   getInitialState() {
     return {
-      lines: 2
+      lines: 2,
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus nec neque nec dignissim. Suspendisse vitae facilisis ante. Nam mattis purus vel scelerisque auctor. Donec mattis felis quis dui dignissim luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi at urna imperdiet, pulvinar metus ac, lobortis orci. Nunc ut molestie odio. Nunc porta posuere fringilla. Nam dictum sodales magna, sed suscipit elit egestas vel. Pellentesque ultricies, quam in imperdiet porta, libero diam luctus nisi, id ornare metus tellus ac sapien. Suspendisse vitae justo posuere turpis hendrerit gravida. Ut gravida hendrerit vulputate. Etiam pharetra ligula eu gravida fringilla.\n\nPellentesque venenatis placerat leo, sed laoreet enim sollicitudin et. Aenean dapibus dui vulputate justo fringilla pretium. Duis pharetra risus nec massa malesuada, ac luctus turpis porta. Aliquam vitae fringilla nibh. Ut vitae ligula tempor, viverra leo et, efficitur diam. Fusce feugiat ligula in turpis eleifend vulputate. Aenean ultricies sollicitudin urna ac lacinia. Nullam sit amet nunc lacus. Vestibulum ac ante vel dui faucibus fermentum nec et ex.",
+      backgroundColor: '#FFFFFF'
     };
   },
 
   render() {
     var lines = this.state.lines;
-    //var visibleItems = parseInt(this.state.visibleItems, 10);
-    //var separator = this.state.separator;
-    //var more = this.state.more;
-    //var atFront = this.state.atFront;
+    var text = this.state.text;
+    var backgroundColor = this.state.backgroundColor;
 
     return (
       <div className='pure-g'>
@@ -48,15 +48,22 @@ module.exports = React.createClass({
                       <label>Number of Lines</label>
                       <input type='number' className='pure-u-23-24' valueLink={this.linkState('lines')}/>
                     </div>
+                    <div className='pure-u-1-2 pure-u-md-1-2'>
+                      <label>Background color</label>
+                      <input type='text' className='pure-u-23-24' valueLink={this.linkState('backgroundColor')}/>
+                    </div>
+                    <div className='pure-u-1-2 pure-u-md-1-2'>
+                      <label>Text</label>
+                      <textarea type='text' className='pure-u-23-24' valueLink={this.linkState('text')}/>
+                    </div>
                   </div>
                 </fieldset>
               </form>
             </div>
 
             <div className="the-example">
-              <Ellipsis>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat leo eros, ac efficitur nisl gravida ut. Nam gravida sed ante quis fermentum. Praesent ipsum velit, commodo vitae pulvinar dapibus, ornare vel libero. Praesent eu mi non orci varius placerat. Quisque eu nisi fermentum, aliquam augue convallis, aliquet risus. Aliquam et eros posuere, consequat sapien at, congue ante. Cras commodo massa et ante iaculis, eget venenatis erat consectetur. Nullam nec porta erat.</p>
-                <p>Morbi a consectetur neque. Phasellus dignissim vestibulum purus id luctus. Donec tempus mattis justo, id pulvinar leo. Proin dolor odio, cursus vel ipsum eget, facilisis ornare dui. Quisque sagittis magna tortor, eu tincidunt mi semper sed. Cras non elit ut tellus maximus molestie. Aenean mattis molestie nibh sed rhoncus.</p>
+              <Ellipsis lines={lines} backgroundColor={backgroundColor}>
+                {text}
               </Ellipsis>
             </div>
           </section>
