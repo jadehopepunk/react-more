@@ -125,7 +125,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      backgroundColor: this.props.backgroundColor
 	    };
 	    if (!this.state.expanded) {
-	      result.height = (height + "px")
+	      result.maxHeight = (height + "px")
 	    }
 	    return result;
 	  },
