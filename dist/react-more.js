@@ -121,18 +121,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var height = this.props.lines * lineHeight;
 
 	    var result = {
-	      'line-height': (lineHeight + "px"),
-	      'background-color': this.props.backgroundColor
+	      lineHeight:      (lineHeight + "px"),
+	      backgroundColor: this.props.backgroundColor
 	    };
 	    if (!this.state.expanded) {
-	      result['height'] = (height + "px")
+	      result.height = (height + "px")
 	    }
 	    return result;
 	  },
 
 	  render:function() {
 	    var linkStyles = {
-	      'background-image': ("linear-gradient(to right, transparent, " + this.props.backgroundColor + " 80%)")
+	      backgroundImage: ("linear-gradient(to right, transparent, " + this.props.backgroundColor + " 80%)")
 	    };
 
 	    var onClickMore = function(event)  {
