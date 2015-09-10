@@ -6,8 +6,8 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var pkg = require('../package.json');
 
 var config = {
-  filename: 'react-resizable-ellipsis',
-  library: 'ReactResizableEllipsis',
+  filename: 'react-more',
+  library: 'ReactMore',
   demoDirectory: 'demo',
 };
 

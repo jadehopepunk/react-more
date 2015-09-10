@@ -1,9 +1,9 @@
-.resizableEllipsis {
+.hasMore {
   overflow: hidden;
   position: relative;
 }
 
-.resizableEllipsis .expandResizableEllipsis {
+.hasMore .expandMore {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -12,6 +12,6 @@
   text-align: right;
 }
 
-.resizableEllipsis .contractResizableEllipsis {
+.hasMore .contractMore {
   text-align: right;
 }

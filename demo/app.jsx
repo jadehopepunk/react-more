@@ -6,7 +6,7 @@ var Fork = require('react-ghfork');
 var readme = require('../README.md');
 var pkgInfo = require('../package.json');
 
-var Ellipsis = require('../lib');
+var More = require('../lib');
 
 module.exports = React.createClass({
   displayName: 'App',
@@ -39,7 +39,7 @@ module.exports = React.createClass({
             <div className='description'>
               <h2>Demonstration</h2>
 
-              <p>Tweak values below and see how Ellipsify behaves.</p>
+              <p>Tweak values below and see how react-more behaves.</p>
 
               <form className='pure-form pure-form-stacked controls'>
                 <fieldset>
@@ -62,9 +62,9 @@ module.exports = React.createClass({
             </div>
 
             <div className="the-example">
-              <Ellipsis lines={lines} backgroundColor={backgroundColor}>
+              <More lines={lines} backgroundColor={backgroundColor}>
                 {text}
-              </Ellipsis>
+              </More>
             </div>
           </section>
           <section className='documentation'>
