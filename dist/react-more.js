@@ -78,17 +78,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 
 	  onResize:function() {
-	    console.log('resize');
 	    this.recheckHeight();
 	  },
 
 	  recheckHeight:function() {
 	    var mainDiv = React.findDOMNode(this);
 	    var insideBigger = (mainDiv.scrollHeight > (mainDiv.clientHeight + 4));
-
-	    console.log('clientHeight', mainDiv.clientHeight);
-	    console.log('scrollHeight', mainDiv.scrollHeight);
-	    console.log('insideBigger', insideBigger);
 
 	    var moreLink = React.findDOMNode(this.refs.moreLink);
 
