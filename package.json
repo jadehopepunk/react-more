@@ -1,6 +1,6 @@
 {
   "name": "react-more",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Truncate an area of text with a fade out effect and read more link, and recompute this if the area gets resized.",
   "main": "dist/react-more.js",
   "scripts": {
@@ -51,6 +51,6 @@
     "xtend": "^4.0.0"
   },
   "peerDependencies": {
-    "react": "^0.13"
+    "react": "^0.14"
   }
 }
