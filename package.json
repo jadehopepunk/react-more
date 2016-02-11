@@ -37,7 +37,7 @@
     "html-webpack-plugin": "^2.8.1",
     "jest-cli": "^0.8.2",
     "json-loader": "^0.5.1",
-    "jsx-loader": "^0.12.2",
+    "jsx-loader": "^0.13.2",
     "markdown-loader": "^0.1.2",
     "purecss": "^0.6.0",
     "react": "^0.13",
