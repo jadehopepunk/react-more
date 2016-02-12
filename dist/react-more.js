@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"));
+		module.exports = factory(require("react"), require("react-dom"));
 	else if(typeof define === 'function' && define.amd)
-		define(["react"], factory);
+		define(["react", "react-dom"], factory);
 	else if(typeof exports === 'object')
-		exports["ReactMore"] = factory(require("react"));
+		exports["ReactMore"] = factory(require("react"), require("react-dom"));
 	else
-		root["ReactMore"] = factory(root["react"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_1__) {
+		root["ReactMore"] = factory(root["react"], root["react-dom"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -56,6 +56,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 	var React = __webpack_require__(1);
+	var ReactDOM = __webpack_require__(2);
 
 	module.exports = React.createClass({
 	  displayName: 'More',
@@ -82,10 +83,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 
 	  recheckHeight:function() {
-	    var mainDiv = React.findDOMNode(this);
+	    var mainDiv = ReactDOM.findDOMNode(this);
 	    var insideBigger = (mainDiv.scrollHeight > (mainDiv.clientHeight + 4));
 
-	    var moreLink = React.findDOMNode(this.refs.moreLink);
+	    var moreLink = this.refs.moreLink;
 
 	    if (moreLink) {
 	      if (insideBigger) {
@@ -162,6 +163,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
 
 /***/ }
 /******/ ])

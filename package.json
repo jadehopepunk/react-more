@@ -1,6 +1,6 @@
 {
   "name": "react-more",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Truncate an area of text with a fade out effect and read more link, and recompute this if the area gets resized.",
   "main": "dist/react-more.js",
   "scripts": {
