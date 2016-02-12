@@ -87,10 +87,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    var moreLink = React.findDOMNode(this.refs.moreLink);
 
-	    if (insideBigger) {
-	      moreLink.style.display = 'block';
-	    } else {
-	      moreLink.style.display = 'none';
+	    if (moreLink) {
+	      if (insideBigger) {
+	        moreLink.style.display = 'block';
+	      } else {
+	        moreLink.style.display = 'none';
+	      }
 	    }
 	  },
 
@@ -116,11 +118,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var height = this.props.lines * lineHeight;
 
 	    var result = {
-	      lineHeight:      (lineHeight + "px"),
+	      lineHeight:      ("" + lineHeight + "px"),
 	      backgroundColor: this.props.backgroundColor
 	    };
 	    if (!this.state.expanded) {
-	      result.maxHeight = (height + "px")
+	      result.maxHeight = ("" + height + "px")
 	    }
 	    return result;
 	  },

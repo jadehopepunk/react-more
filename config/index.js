@@ -112,6 +112,7 @@ var commonDist = extend(common, {
     entry: './lib/index',
     externals: {
         react: 'react',
+        'react-dom': 'react-dom',
         'react/addons': 'react/addons'
     },
     module: {

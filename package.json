@@ -40,7 +40,8 @@
     "jsx-loader": "^0.13.2",
     "markdown-loader": "^0.1.2",
     "purecss": "^0.6.0",
-    "react": "^0.13",
+    "react": "^0.14",
+    "react-dom": "^0.14",
     "react-ghfork": "^0.3.2",
     "react-hot-loader": "^1.2.3",
     "react-tools": "^0.13.1",
@@ -51,6 +52,7 @@
     "xtend": "^4.0.0"
   },
   "peerDependencies": {
-    "react": "^0.13"
+    "react": "^0.14",
+    "react-dom": "^0.14"
   }
 }
