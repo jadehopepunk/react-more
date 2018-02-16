@@ -1,6 +1,10 @@
+var createReactClass = require('create-react-class');
+var LinkedInput = require('react-linked-input');
+var LinkedStateMixin = require('react-addons-linked-state-mixin');
+
 'use strict';
 
-var React = require('react/addons');
+var React = require('react');
 var Fork = require('react-ghfork');
 
 var readme = require('../README.md');
@@ -8,10 +12,10 @@ var pkgInfo = require('../package.json');
 
 var More = require('../lib');
 
-module.exports = React.createClass({
+module.exports = createReactClass({
   displayName: 'App',
 
-  mixins: [React.addons.LinkedStateMixin],
+  mixins: [LinkedStateMixin],
 
   getInitialState() {
     return {
@@ -46,11 +50,11 @@ module.exports = React.createClass({
                   <div className='pure-g'>
                     <div className='pure-u-1-2 pure-u-md-1-2'>
                       <label>Number of Lines</label>
-                      <input type='number' className='pure-u-23-24' valueLink={this.linkState('lines')}/>
+                      <LinkedInput type='number' className='pure-u-23-24' valueLink={this.linkState('lines')}/>
                     </div>
                     <div className='pure-u-1-2 pure-u-md-1-2'>
                       <label>Background color</label>
-                      <input type='text' className='pure-u-23-24' valueLink={this.linkState('backgroundColor')}/>
+                      <LinkedInput type='text' className='pure-u-23-24' valueLink={this.linkState('backgroundColor')}/>
                     </div>
                     <div className='pure-u-1-2 pure-u-md-1-2'>
                       <label>Text</label>

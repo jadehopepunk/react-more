@@ -41,9 +41,11 @@
     "markdown-loader": "^0.1.2",
     "purecss": "^0.6.0",
     "react": "^15.1",
+    "react-addons-linked-state-mixin": "^15.6.2",
     "react-dom": "^15.1",
     "react-ghfork": "^0.3.2",
     "react-hot-loader": "^1.2.3",
+    "react-linked-input": "^15.6.2",
     "react-tools": "^0.13.1",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.5",
@@ -52,10 +54,11 @@
     "xtend": "^4.0.0"
   },
   "peerDependencies": {
-    "react": "^15.1",
-    "react-dom": "^15.1"
+    "react": "^16.0",
+    "react-dom": "^16.0"
   },
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "prop-types": "^15.6.0"
   }
 }
